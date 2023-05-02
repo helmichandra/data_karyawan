@@ -1,0 +1,638 @@
+ <!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mitratel</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/font-awesome/css/font-awesome.min.css" type='text/css'/>
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>dok/vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="<?=base_url()?>dok/assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand">Mitra<b>tel</b></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
+                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
+                            <li><i class="fa fa-share-square-o"></i><a href="ui-social-buttons.html">Social Buttons</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>
+                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>
+                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>
+                            <li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>
+                            <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
+                            <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
+                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                        </ul>
+                    </li>
+
+                   
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+            <img src="<?=base_url()?>dok/images/1.png" alt="Logo" style="width: 400px; padding: 20px 20px 10px; ">
+
+            <div class="header-menu">
+
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">5</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                <i class="fa fa-check"></i>
+                                <p>Server #1 overloaded.</p>
+                            </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                <i class="fa fa-info"></i>
+                                <p>Server #2 overloaded.</p>
+                            </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                <i class="fa fa-warning"></i>
+                                <p>Server #3 overloaded.</p>
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                id="message"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-email"></i>
+                                <span class="count bg-primary">9</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                <span class="message media-body">
+                                    <span class="name float-left">Jonathan Smith</span>
+                                    <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                </span>
+                            </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                <span class="message media-body">
+                                    <span class="name float-left">Jack Sanders</span>
+                                    <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </span>
+                            </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                <span class="message media-body">
+                                    <span class="name float-left">Cheryl Wheeler</span>
+                                    <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                </span>
+                            </a>
+                                <a class="dropdown-item media bg-flat-color-3" href="#">
+                                <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                <span class="message media-body">
+                                    <span class="name float-left">Rachel Santos</span>
+                                    <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+
+                    <div class="language-select dropdown" id="language-select">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="language">
+                            <div class="dropdown-item">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-it"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Table</a></li>
+                            <li class="active">Data table</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Data Table</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table-export" class="table table-striped table-bordered" >
+                                 
+ 
+                            <div class="modal-body">
+                                <form action="<?=base_url('index.php/table/tambah_table')?>" method="post" enctype="multipart/form-data">
+
+                                <label for="project_id">Project ID </label>
+                                <input type="text" name="project_id" class="form-control"><br>
+
+                                                              
+                                <label for="id_dmt">Site ID DMT </label>
+                                <input type="text" name="id_dmt" class="form-control"><br>    
+
+                                <label for="sow">SOW</label>
+                                <input type="text" name="sow" class="form-control"><br>  
+
+                                <label for="tenant">Tenant</label>
+                                <input type="text" name="tenant" class="form-control"><br>  
+
+                                <label for="id_actual">Site ID Actual</label>
+                                <input type="text" name="id_actual" class="form-control"><br>  
+
+                                <label for="name_actual">Site Name Actual</label>
+                                <input type="text" name="name_actual" class="form-control"><br>  
+
+                                <label for="status">Status</label>
+                                <input type="text" name="status" class="form-control"><br>  
+
+                                <label for="id_owner">Site ID Owner</label>
+                                <input type="text" name="id_owner" class="form-control"><br>    
+
+                                <label for="name_owner">Site Name Owner</label>
+                                <input type="text" name="name_owner" class="form-control"><br>  
+
+                                <label for="tower_owner">Tower Owner</label>
+                                <input type="text" name="tower_owner" class="form-control"><br>  
+
+                                <label for="pabrikan_tower">Pabrikan Tower</label>
+                                <input type="text" name="pabrikan_tower" class="form-control"><br>  
+
+                                <label for="type_tower1">Type Tower1</label>
+                                <input type="text" name="type_tower1" class="form-control"><br>  
+
+                                <label for="type_tower2">Type Tower2</label>
+                                <input type="text" name="type_tower2" class="form-control"><br>  
+                                <label for="type_tower3">Type Tower3</label>
+                                <input type="text" name="type_tower3" class="form-control"><br>    
+
+                                <label for="height_tower">Height Tower</label>
+                                <input type="text" name="height_tower" class="form-control"><br>  
+
+                                <label for="load_tower">Load Tower</label>
+                                <input type="text" name="load_tower" class="form-control"><br>  
+
+                                <label for="longtitude">Longitude</label>
+                                <input type="text" name="longtitude" class="form-control"><br>  
+
+                                <label for="latitude">Latitude</label>
+                                <input type="text" name="latitude" class="form-control"><br>  
+
+                                <label for="adress">Adress</label>
+                                <textarea name="adress" cols="30" rows="10" class="form-control"></textarea>
+
+                                <label for="konsultan">Mitra Konsultan</label>
+                                <input type="text" name="konsultan" class="form-control"><br>    
+
+                                <label for="sitac">Mitra Sitac</label>
+                                <input type="text" name="sitac" class="form-control"><br>  
+
+                                <label for="imb">Mitra IMB  </label>
+                                <input type="text" name="imb" class="form-control"><br>  
+
+                                <label for="cme">Mitra CME</label>
+                                <input type="text" name="cme" class="form-control"><br>  
+
+                                <label for="sacme">Mitra SACME</label>
+                                <input type="text" name="sacme" class="form-control"><br>  
+
+                                <label for="power">Mitra Power</label>
+                                <input type="text" name="power" class="form-control"><br>  
+
+                                <label for="panel">Mitra Panel</label>
+                                <input type="text" name="panel" class="form-control"><br>    
+
+                                <label for="tower">Mitra Tower</label>
+                                <input type="text" name="tower" class="form-control"><br>  
+
+                                <label for="id_pln">ID PLN</label>
+                                <input type="text" name="id_pln" class="form-control"><br>  
+
+                                <label for="daya_pln">DAYA PLN</label>
+                                <input type="text" name="daya_pln" class="form-control"><br>  
+
+                                <label for="rfi">RFI ON AIR</label>
+                                <input type="text" name="rfi" class="form-control"><br>  
+
+                                <label for="on_air">APD (dokumen)</label>
+                                <input type="text" name="on_air" class="form-control"><br>  
+                                
+                                <label for="apd">ABD (dokumen)</label>
+                                <input type="file" name="apd" class="form-control"><br>    
+
+                                <label for="abd">NIP</label>
+                                <input type="file" name="abd" class="form-control"><br>  
+
+                                <label for="bast">NIP</label>
+                                <input type="text" name="bast" class="form-control"><br>  
+
+                                <label for="pks">NIP</label>
+                                <input type="text" name="pks" class="form-control"><br>  
+
+                                <label for="imb_doc">NIP</label>
+                                <input type="text" name="imb_doc" class="form-control"><br>  
+
+                                <label for="type_mount1">NIP</label>
+                                <input type="text" name="type_mount1" class="form-control"><br>  
+
+                                <label for="antenna_rf1">NIP</label>
+                                <input type="text" name="antenna_rf1" class="form-control"><br>    
+
+                                <label for="elevasi_antenna1">NIP</label>
+                                <input type="text" name="elevasi_antenna1" class="form-control"><br>  
+
+                                <label for="height_antenna1">NIP</label>
+                                <input type="text" name="height_antenna1" class="form-control"><br>  
+
+                                <label for="dimensi_antenna1">NIP</label>
+                                <input type="text" name="dimensi_antenna1" class="form-control"><br>  
+
+                                <label for="weight_antenna1">NIP</label>
+                                <input type="text" name="weight_antenna1" class="form-control"><br>  
+
+                                <label for="azimut_antenna1">NIP</label>
+                                <input type="text" name="azimut_antenna1" class="form-control"><br>  
+                                <label for="type_mount2">NIP</label>
+                                <input type="text" name="type_mount2" class="form-control"><br>  
+                                
+                                <label for="antenna_rf2">NIP</label>
+                                <input type="text" name="antenna_rf2" class="form-control"><br>    
+
+                                <label for="elevasi_antenna2">NIP</label>
+                                <input type="text" name="elevasi_antenna2" class="form-control"><br>  
+
+                                <label for="height_antenna2">NIP</label>
+                                <input type="text" name="height_antenna2" class="form-control"><br>  
+
+                                <label for="dimensi_antenna2">NIP</label>
+                                <input type="text" name="dimensi_antenna2" class="form-control"><br>  
+
+                                <label for="weight_antenna2">NIP</label>
+                                <input type="text" name="weight_antenna2" class="form-control"><br>  
+
+                                <label for="azimut_antenna2">NIP</label>
+                                <input type="text" name="azimut_antenna2" class="form-control"><br>  
+
+                                <label for="type_mount3">NIP</label>
+                                <input type="text" name="type_mount3" class="form-control"><br>  
+                                
+                                <label for="antenna_rf3">NIP</label>
+                                <input type="text" name="antenna_rf3" class="form-control"><br>    
+
+                                <label for="elevasi_antenna3">NIP</label>
+                                <input type="text" name="elevasi_antenna3" class="form-control"><br>  
+
+                                <label for="height_antenna3">NIP</label>
+                                <input type="text" name="height_antenna3" class="form-control"><br>  
+
+                                <label for="dimensi_antenna3">NIP</label>
+                                <input type="text" name="dimensi_antenna3" class="form-control"><br>  
+
+                                <label for="weight_antenna3">NIP</label>
+                                <input type="text" name="weight_antenna3" class="form-control"><br>  
+
+                                <label for="azimut_antenna3">NIP</label>
+                                <input type="text" name="azimut_antenna3" class="form-control"><br>  
+
+                                <label for="type_mounti1">NIP</label>
+                                <input type="text" name="type_mounti1" class="form-control"><br>  
+
+                                <label for="mw1">NIP</label>
+                                <input type="text" name="mw1" class="form-control"><br>  
+
+                                <label for="elevasi_mw1">NIP</label>
+                                <input type="text" name="elevasi_mw1" class="form-control"><br>  
+
+                                <label for="height_mw1">NIP</label>
+                                <input type="text" name="height_mw1" class="form-control"><br>  
+
+                                <label for="dimensi_mw1">NIP</label>
+                                <input type="text" name="dimensi_mw1" class="form-control"><br>  
+                                <label for="weight_mw1">NIP</label>
+                                <input type="text" name="weight_mw1" class="form-control"><br>    
+
+                                <label for="azimut_mw1">NIP</label>
+                                <input type="text" name="azimut_mw1" class="form-control"><br>  
+
+                               <label for="type_mounti2">NIP</label>
+                                <input type="text" name="type_mounti2" class="form-control"><br>  
+
+                                <label for="mw2">NIP</label>
+                                <input type="text" name="mw2" class="form-control"><br>  
+
+                                <label for="elevasi_mw2">NIP</label>
+                                <input type="text" name="elevasi_mw2" class="form-control"><br>  
+
+                                <label for="height_mw2">NIP</label>
+                                <input type="text" name="height_mw2" class="form-control"><br>  
+
+                                <label for="dimensi_mw2">NIP</label>
+                                <input type="text" name="dimensi_mw2" class="form-control"><br>  
+                                <label for="weight_mw2">NIP</label>
+                                <input type="text" name="weight_mw2" class="form-control"><br>    
+
+                                <label for="azimut_mw2">NIP</label>
+                                <input type="text" name="azimut_mw2" class="form-control"><br>  
+                                <label for="type_mounti3">NIP</label>
+                                <input type="text" name="type_mounti3" class="form-control"><br>  
+
+                                <label for="mw3">NIP</label>
+                                <input type="text" name="mw3" class="form-control"><br>  
+
+                                <label for="elevasi_mw3">NIP</label>
+                                <input type="text" name="elevasi_mw3" class="form-control"><br>  
+
+                                <label for="height_mw3">NIP</label>
+                                <input type="text" name="height_mw3" class="form-control"><br>  
+
+                                <label for="dimensi_mw3">NIP</label>
+                                <input type="text" name="dimensi_mw3" class="form-control"><br>  
+                                <label for="weight_mw3">NIP</label>
+                                <input type="text" name="weight_mw3" class="form-control"><br>    
+
+                                <label for="azimut_mw3">NIP</label>
+                                <input type="text" name="azimut_mw3" class="form-control"><br>  
+
+                                <label for="type_mountn1">NIP</label>
+                                <input type="text" name="type_mountn1" class="form-control"><br>  
+                                <label for="rru1">NIP</label>
+                                <input type="text" name="rru1" class="form-control"><br>    
+
+                                <label for="elevasi_rru1">NIP</label>
+                                <input type="text" name="elevasi_rru1" class="form-control"><br>  
+
+                                <label for="height_rru1">NIP</label>
+                                <input type="text" name="height_rru1" class="form-control"><br>  
+
+                                <label for="dimensi_rru1">NIP</label>
+                                <input type="text" name="dimensi_rru1" class="form-control"><br>  
+
+                                <label for="weight_rru1">NIP</label>
+                                <input type="text" name="weight_rru1" class="form-control"><br>  
+
+                                <label for="type_mountn2">NIP</label>
+                                <input type="text" name="type_mountn2" class="form-control"><br>  
+                                <label for="rru2">NIP</label>
+                                <input type="text" name="rru2" class="form-control"><br>    
+
+                                <label for="elevasi_rru2">NIP</label>
+                                <input type="text" name="elevasi_rru2" class="form-control"><br>  
+
+                                <label for="height_rru2">NIP</label>
+                                <input type="text" name="height_rru2" class="form-control"><br>  
+
+                                <label for="dimensi_rru2">NIP</label>
+                                <input type="text" name="dimensi_rru2" class="form-control"><br>  
+
+                                <label for="weight_rru2">NIP</label>
+                                <input type="text" name="weight_rru2" class="form-control"><br>
+
+                               <label for="type_mountn3">NIP</label>
+                                <input type="text" name="type_mountn3" class="form-control"><br>  
+                                <label for="rru3">NIP</label>
+                                <input type="text" name="rru3" class="form-control"><br>    
+
+                                <label for="elevasi_rru3">Elevasi RRU3</label>
+                                <input type="text" name="elevasi_rru3" class="form-control"><br>  
+
+                                <label for="height_rru3">NIP</label>
+                                <input type="text" name="height_rru3" class="form-control"><br>  
+
+                                <label for="dimensi_rru3">NIP</label>
+                                <input type="text" name="dimensi_rru3" class="form-control"><br>  
+
+                                <label for="weight_rru3">NIP</label>
+                                <input type="text" name="weight_rru3" class="form-control"><br>
+
+                                <label for="caf1">NIP</label>
+                                <input type="text" name="caf1" class="form-control"><br>  
+
+                                <label for="caf2">NIP</label>
+                                <input type="text" name="caf2" class="form-control"><br>  
+
+                                <label for="caf3">NIP</label>
+                                <input type="text" name="caf3" class="form-control"><br>  
+
+                                <label for="oarf1">NIP</label>
+                                <input type="text" name="oarf1" class="form-control"><br>  
+
+                                <label for="oarf2">NIP</label>
+                                <input type="text" name="oarf2" class="form-control"><br>  
+                                <label for="oarf3">NIP</label>
+                                <input type="text" name="oarf3" class="form-control"><br>    
+
+                                <label for="pid_perk">NIP</label>
+                                <input type="text" name="pid_perk" class="form-control"><br>  
+
+                                <label for="sow_perk">NIP</label>
+                                <input type="text" name="sow_perk" class="form-control"><br>  
+
+                                <label for="tonase_perk">NIP</label>
+                                <input type="text" name="tonase_perk" class="form-control"><br>  
+
+                                <label for="mitra_perk">NIP</label>
+                                <input type="text" name="mitra_perk" class="form-control"><br>  
+
+                                <label for="pabrikasi_perk">NIP</label>
+                                <input type="text" name="pabrikasi_perk" class="form-control"><br>  
+                                <label for="apd_perkuatan">NIP</label>
+                                <input type="text" name="apd_perkuatan" class="form-control"><br>    
+
+                                <label for="nod_perkuatan">NIP</label>
+                                <input type="text" name="nod_perkuatan" class="form-control"><br>  
+
+                                <label for="rfi_perkuatan">RFI Perkuatan</label>
+                                <input type="text" name="rfi_perkuatan" class="form-control"><br>  
+
+                                <label for="bast_perkuatan">Bast Perkuatan</label>
+                                <input type="text" name="bast_perkuatan" class="form-control"><br>  
+
+                                <label for="foto_perkuatan">Foto Perkuatan</label>
+                                <input type="text" name="foto_perkuatan" class="form-control"><br>  
+
+                                
+
+                                <br>
+                                <div class="modal-footer">
+                                <input type="submit" name="simpan" value="Simpan" class="btn btn-success">
+                                </div>
+                                </form>
+                                
+                            </div>
+                            
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
+
+
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+
+    <script src=" <?=base_url()?>dok/vendors/jquery/dist/jquery.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src=" <?=base_url()?>dok/assets/js/main.js"></script>
+
+
+    <script src=" <?=base_url()?>dok/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/jszip/dist/jszip.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src=" <?=base_url()?>dok/vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src=" <?=base_url()?>dok/assets/js/init-scripts/data-table/datatables-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
